@@ -1,0 +1,172 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --main-color: #101827;
+    --app-content-main-color: #fff;
+    --action-color: #2ba972;
+    --action-color-hover: #2fb97e;
+    --app-content-secondary-color: #1d283c;
+    --hover-shadow: rgba(16, 24, 39, 0.8) 0px 6px 12px -2px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 1280px;
+    border-radius: 4px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: var(--main-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* End Global Rules */
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: var(--action-color);
+}
+
+.flex-outer{
+    padding: auto;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+ul {
+    padding: 0;
+}
+
+input:hover{
+    border-color: var(--action-color);
+}
+
+input:focus{
+    border-color: var(--action-color);
+}
+
+input:active{
+    border-color: var(--action-color);
+}
+
+.flex-outer li,
+.flex-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 120px;
+    -ms-flex: 1 0 120px;
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 220px;
+    -ms-flex: 1 0 220px;
+    flex: 1 0 220px;
+}
+
+.flex-outer li {
+    padding: 10px;
+}
+
+.flex-outer li input,
+.flex-outer li textarea {
+    padding: 10px;
+    border-color: var(--action-color);
+}
+
+.submit-form,
+.remove-form {
+    background-color: var(--action-color);
+    color: #f8f4f0;
+    border: none;
+    border-radius: 1rem;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+}
+
+.submit-form:hover,
+.remove-form:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
+.flex-inner {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+input,
+textarea,
+select {
+    border: none;
+    background: #f2f2f2;
+}
+
+option,
+label{
+    font-size: 14px;
+}

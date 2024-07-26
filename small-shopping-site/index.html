@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css links -->
+        <link rel="stylesheet" href="css/index.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+        <title>Products</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <!--Start header-->
+            <div class="header">
+                <div class="headOne">
+                    <h1 class="headerText">Products</h1>
+                </div>
+                <div class="headTwo">
+                    <a href="add.html" target="_blank" rel="noopener noreferrer"><button
+                            class="headerButton responButton">Add
+                            </button></a>
+                    <button class="headerButton responButton">Clear</button>
+                </div>
+            </div>
+            <div class="app-content-actions">
+                <input class="search-bar" placeholder="Search..." type="text">
+                <div class="app-content-actions-wrapper">
+                    <button class="action-button list active" title="List View">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-list">
+                            <line x1="8" y1="6" x2="21" y2="6" />
+                            <line x1="8" y1="12" x2="21" y2="12" />
+                            <line x1="8" y1="18" x2="21" y2="18" />
+                            <line x1="3" y1="6" x2="3.01" y2="6" />
+                            <line x1="3" y1="12" x2="3.01" y2="12" />
+                            <line x1="3" y1="18" x2="3.01" y2="18" />
+                        </svg>
+                    </button>
+                    <button class="action-button grid" title="Grid View">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-grid">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!--End header-->
+            <!--Start products-table-->
+            <div class="products-area tableView">
+                <!--Start products-header-->
+                <div class="products-header">
+                    <div class="product-cell image">Items</div>
+                    <div class="product-cell category">Category</div>
+                    <div class="product-cell status-cell">Status</div>
+                    <div class="product-cell size">Size</div>
+                    <div class="product-cell price">Price</div>
+                    <div class="product-cell edit">Edit</div>
+                    <div class="product-cell delete">Delete</div>
+                </div>
+                <!--End products-header-->
+                <!--Start product-->
+                <div class="products-row m-2">
+                    <a href="show.html"><div class="product-cell image">
+                        <input type="checkbox" id="cb1">
+                        <img src="imgs/1.jpg" alt="product">
+                        <label for="cb1"><span>JAEGER</span></label>
+                    </div></a>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Pants</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>11</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$560</div>
+                    <div class="product-cell edit">
+                        <a href="edit.html" target="_blank">
+                            <button class="headerButton">Edit</button>
+                        </a>
+                    </div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb2">
+                        <img src="imgs/2.jpg" alt="product">
+                        <label for="cb2"><span>ZEGNA</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Jacket</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status disabled">Disabled</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>6</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$710</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb3">
+                        <img src="imgs/3.jpg" alt="product">
+                        <label for="cb3"><span>ZARA</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Oversize</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>61</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$360</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb4">
+                        <img src="imgs/4.jpeg" alt="product">
+                        <label for="cb4"></label><span>ZARA</span>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Oversize</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status disabled">Disabled</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>41</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$260</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb5">
+                        <img src="imgs/5.jpg" alt="product">
+                        <label for="cb5"><span>ZEGNA</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Jacket</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>32</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$350</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb6">
+                        <img src="imgs/6.jpg" alt="product">
+                        <label for="cb6"><span>ZEGNA</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Jacket</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status disabled">Disabled</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>22</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$160</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb7">
+                        <img src="imgs/7.jpg" alt="product">
+                        <label for="cb7"><span>GUCCI</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Jacket</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>23</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$340</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb8">
+                        <img src="imgs/8.jpg" alt="product">
+                        <label for="cb8"><span>COACH</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Shoes</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>32</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$350</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb9">
+                        <img src="imgs/9.jpg" alt="product">
+                        <label for="cb9"><span>GUCCI</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Shoes</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>24</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$60</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb10">
+                        <img src="imgs/10.jpg" alt="product">
+                        <label for="cb10"><span>AMAZON</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Voz</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>41</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$270</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb11">
+                        <img src="imgs/11.jpg" alt="product">
+                        <label for="cb11"><span>AMAZON</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Voz</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status disabled">Disabled</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>52</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$230</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb12">
+                        <img src="imgs/12.jpg" alt="product">
+                        <label for="cb12"><span>PREEME</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Childern</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>21</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$252</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+                <!--Start product-->
+                <div class="products-row">
+                    <div class="product-cell image">
+                        <input type="checkbox" id="cb13">
+                        <img src="imgs/13.jpg" alt="product">
+                        <label for="cb13"><span>PREEME</span></label>
+                    </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Childern</div>
+                    <div class="product-cell status-cell">
+                        <span class="cell-label">Status:</span>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="product-cell size"><span class="cell-label">Size:</span>32</div>
+                    <div class="product-cell price"><span class="cell-label">Price:</span>$350</div>
+                    <div class="product-cell edit"><button class="headerButton">Edit</button></div>
+                    <div class="product-cell delete"><button class="headerButton">Delete</button></div>
+                </div>
+                <!--End product-->
+            </div>
+            <!--End products-table-->
+        </div>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+    </body>
+
+</html>

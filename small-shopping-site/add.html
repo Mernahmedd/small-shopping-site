@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css links -->
+        <link rel="stylesheet" href="css/add.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+        <title>ADD</title>
+    </head>
+
+    <body>
+        <form action="" method="post">
+            <h2>ADD PRODUCT</h3>
+            <ul class="flex-outer">
+                <li>
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" minlength="3" maxlength="12" required placeholder="Enter Product name here">
+                </li>
+                <li>
+                    <label for="photo">Product Image:</label>
+                    <input type="file" id="photo" required multiple="multiple" />
+                </li>
+                <li>
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" required placeholder="Enter Product Category here">
+                </li>
+                <li>
+                    <label class="status">Status:</label>
+                    <select id="language" name="language">
+                        <option value="">Select Status...</option>
+                        <option value="Ac">Active</option>
+                        <option value="Db">Disabled</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="price">Price:</label>
+                    <input type="tel" id="price" minlength="1" maxlength="3" required placeholder="Enter Product Price here">
+                </li>
+                <li>
+                    <label class="kind">Kind</label>
+                    <select id="language" name="language">
+                        <option value="">Select Kind...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="childern">Childern</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="message">Description:</label>
+                    <textarea id="message" rows="6" rows="10" placeholder="Enter your message here"></textarea>
+                </li>
+                <li>
+                    <p>Size:</p>
+                    <ul class="flex-inner">
+                        <li>
+                            <input type="checkbox" id="small">
+                            <label for="small">Small</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="medium">
+                            <label for="medium">Medium</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="large">
+                            <label for="large">Large</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="x-large">
+                            <label for="x-large">X-Large</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="buttons">
+                    <input class="remove-form" type="reset" value="Reset">
+                    <input class="submit-form" type="submit" value="Submit">
+                </li>
+            </ul>
+        </form>
+    </body>
+
+</html>
